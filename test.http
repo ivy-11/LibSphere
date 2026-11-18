@@ -1,0 +1,37 @@
+POST http://localhost:5000/api/books
+Content-Type: application/json
+
+{
+  "title": "Data Structures and Algorithms",
+  "author": "Robert Gill",
+  "category": "Computer Science",
+  "copies": 5
+}
+### Get All Books
+GET http://localhost:5000/api/books
+
+### Get Single Book by ID
+GET http://localhost:5000/api/books/6adcb59c389e25f6e434a84c
+
+### Update Book by ID
+PUT http://localhost:5000/api/books/6adcb59c389e25f6e434a84c
+Content-Type: application/json
+
+{
+  "copies": 10
+}
+
+### Delete Book by ID
+DELETE http://localhost:5000/api/books/6adcb99e389e25f6e434a84d
+
+### Get All Seats
+GET http://localhost:5000/api/seats
+
+### Book a Seat
+POST http://localhost:5000/api/seats/book
+Content-Type: application/json
+
+{
+  "seatNumber": "A1",
+  "bookedBy": "Dipa"
+}
